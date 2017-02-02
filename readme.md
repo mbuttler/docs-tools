@@ -25,5 +25,6 @@ Both scripts require the full path to the file. To get a full path, navigate to 
 
 **Publish a document to a help center**
 
-`ruby sandbox.rb publish --file=/Users/.../docs/path/to/doc.md` -
+`ruby sandbox.rb publish --file=/Users/.../docs/path/to/doc.md`
+
 `ruby docscli.rb publish --file=/Users/.../docs/path/to/doc.md`
