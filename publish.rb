@@ -4,11 +4,12 @@
 require 'httparty'
 require 'yaml'
 require 'redcarpet'
+require_relative 'environment.rb'
 YAML_FRONT_MATTER_REGEXP = /\A(---\s*\n.*?\n?)^((---|\.\.\.)\s*$\n?)/m
 
 class ZendeskHc
   include HTTParty
-  base_uri 'https://speedyrails1470251421.zendesk.com/api/v2/help_center/'
+  base_uri PRODUCTION
 
   def initialize(u, p)
       @auth = {username: u, password: p}
